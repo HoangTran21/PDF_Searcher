@@ -87,27 +87,20 @@ st.markdown("""
         background-color: #ffffff !important;
     }
 
-    /* Nút đóng/mở Sidebar - Ép màu Navy cực mạnh */
     [data-testid="stSidebarCollapseButton"], 
     [data-testid="stSidebarCollapseButton"] button,
     button[aria-label="Close sidebar"],
     button[aria-label="Open sidebar"],
-    .collapsedControl,
-    .st-emotion-cache-6qob1r {
+    .collapsedControl {
         background-color: #000080 !important;
         color: white !important;
+        border-radius: 5px !important;
     }
-    /* Đảm bảo mũi tên/biểu tượng luôn hiện màu trắng */
-    [data-testid="stSidebarCollapseButton"] svg,
-    [data-testid="stSidebarCollapseButton"] path,
-    button[aria-label="Close sidebar"] svg, 
-    button[aria-label="Open sidebar"] svg,
-    button[aria-label="Close sidebar"] path,
-    button[aria-label="Open sidebar"] path {
+    [data-testid="stSidebarCollapseButton"] svg, 
+    button[aria-label="Close sidebar"] svg,
+    button[aria-label="Open sidebar"] svg {
         fill: white !important;
-        stroke: white !important; /* Thêm stroke để chắc chắn hiện mũi tên */
     }
-
 
     [data-testid="StyledFullScreenButton"],
     button[title="View fullscreen"] {
